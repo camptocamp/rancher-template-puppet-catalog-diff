@@ -1,0 +1,22 @@
+.catalog:
+  name: "puppet-catalog-diff"
+  version: "v0.1.0"
+  description: "Puppet Catalog Diff Stack"
+  uuid: c2c-infra-dashboard-0
+  minimum_rancher_version: v0.44.0
+  questions:
+    - variable: "S3_BUCKET"
+      label: "S3 bucket"
+      description: "S3 bucket"
+      type: "string"
+      required: false
+    - variable: "VIEWER_S3_ACCESS_KEY"
+      label: "Viewer S3 Access Key"
+      description: "S3 Access Key for the Viewer"
+      type: "string"
+      required: false
+    - variable: "VIEWER_S3_SECRET_KEY"
+      label: "Viewer S3 Secret Key"
+      description: "S3 Secret Key for the Viewer"
+      type: "password"
+      required: false
