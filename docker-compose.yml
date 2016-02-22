@@ -6,7 +6,7 @@ viewer:
     S3_SECRET_KEY: ${VIEWER_S3_SECRET_KEY}
 
 catalog_diff:
-  image: camptocamp/puppet-catalog-diff:1.6.0-1
+  image: camptocamp/puppet-catalog-diff:1.6.0-2
   environment:
     SITE: ${CATALOG_DIFF_SITE}
     MASTER1: ${CATALOG_DIFF_MASTER_1}
