@@ -1,8 +1,8 @@
 .catalog:
   name: "puppet-catalog-diff"
-  version: "v0.1.0"
+  version: "v0.2.0"
   description: "Puppet Catalog Diff Stack"
-  uuid: c2c-infra-dashboard-0
+  uuid: c2c-infra-dashboard-1
   minimum_rancher_version: v0.44.0
   questions:
     - variable: "S3_BUCKET"
@@ -18,5 +18,41 @@
     - variable: "VIEWER_S3_SECRET_KEY"
       label: "Viewer S3 Secret Key"
       description: "S3 Secret Key for the Viewer"
+      type: "password"
+      required: false
+    - variable: "CATALOG_DIFF_MASTER_1"
+      label: "Puppet master 1"
+      description: "Puppet Master 1 for diffing"
+      type: "string"
+      required: false
+    - variable: "CATALOG_DIFF_MASTER_2"
+      label: "Puppet master 2"
+      description: "Puppet Master 2 for diffing"
+      type: "string"
+      required: false
+    - variable: "CATALOG_DIFF_SITE"
+      label: "Site"
+      description: "Catalog diff site"
+      type: "string"
+      required: false
+    - variable: "PUPPETDB_SERVICE"
+      label: "PuppetDB Service"
+      description: "Link to the PuppetDB service container"
+      type: "service"
+      default: "puppet/puppetdb"
+      required: true
+    - variable: "CRON_SCRIPT"
+      label: "Cron script"
+      description: "Content of cron script to launch daily"
+      type: "multiline"
+      required: false
+    - variable: "CATALOG_DIFF_S3_ACCESS_KEY"
+      label: "Catalog Diff S3 Access Key"
+      description: "S3 Access Key for the Compiler"
+      type: "string"
+      required: false
+    - variable: "CATALOG_DIFF_S3_SECRET_KEY"
+      label: "Catalog Diff S3 Secret Key"
+      description: "S3 Secret Key for the Compiler"
       type: "password"
       required: false
