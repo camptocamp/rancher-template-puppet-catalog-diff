@@ -17,4 +17,4 @@ catalog_diff:
     S3_SECRET_KEY: ${CATALOG_DIFF_S3_SECRET_KEY}
     CRON_SCRIPT: ${CRON_SCRIPT}
   external_links:
-  - "${PUPPETDB_SERVICE}:puppetdb"
+  - ${PUPPETDB_SERVICE}:puppetdb
