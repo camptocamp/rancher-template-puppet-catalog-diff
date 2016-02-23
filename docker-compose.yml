@@ -19,3 +19,4 @@ generator:
   external_links:
   - ${PUPPETDB_SERVICE}:puppetdb
   - ${PUPPETSERVER_SERVICE}:puppet
+  - ${PUPPETCA_SERVICE}:puppetca
