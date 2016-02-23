@@ -18,3 +18,4 @@ generator:
     CRON_SCRIPT: ${CRON_SCRIPT}
   external_links:
   - ${PUPPETDB_SERVICE}:puppetdb
+  - ${PUPPETSERVER_SERVICE}:puppet
