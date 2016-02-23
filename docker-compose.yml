@@ -24,3 +24,5 @@ generator:
   - ${PUPPETDB_SERVICE}:puppetdb
   - ${PUPPETSERVER_SERVICE}:puppet
   - ${PUPPETCA_SERVICE}:puppetca
+  volumes:
+  - puppetcatalogdiff:/data
