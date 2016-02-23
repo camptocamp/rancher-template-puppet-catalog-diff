@@ -1,5 +1,5 @@
 viewer:
-  image: camptocamp/puppet-catalog-diff-viewer:0.1.1
+  image: camptocamp/puppet-catalog-diff-viewer:0.2.0
   environment:
     S3_BUCKET: ${S3_BUCKET}
     S3_ACCESS_KEY: ${VIEWER_S3_ACCESS_KEY}
