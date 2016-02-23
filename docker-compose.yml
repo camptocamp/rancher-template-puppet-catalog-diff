@@ -10,7 +10,7 @@ viewer:
   - generator
 
 generator:
-  image: camptocamp/puppet-catalog-diff:1.6.0-4
+  image: camptocamp/puppet-catalog-diff:1.6.0-5
   environment:
     SITE: ${CATALOG_DIFF_SITE}
     MASTER1: ${CATALOG_DIFF_MASTER_1}
