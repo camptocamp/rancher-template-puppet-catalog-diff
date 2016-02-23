@@ -4,6 +4,10 @@ viewer:
     S3_BUCKET: ${S3_BUCKET}
     S3_ACCESS_KEY: ${VIEWER_S3_ACCESS_KEY}
     S3_SECRET_KEY: ${VIEWER_S3_SECRET_KEY}
+  labels:
+    io.rancher.sidekicks: generator
+  volumes_from:
+  - generator
 
 generator:
   image: camptocamp/puppet-catalog-diff:1.6.0-4
