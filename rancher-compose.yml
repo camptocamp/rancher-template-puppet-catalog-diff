@@ -24,6 +24,7 @@
       label: "Puppet master 1"
       description: "Puppet Master 1 for diffing"
       type: "string"
+      default: "puppet"
       required: false
     - variable: "CATALOG_DIFF_MASTER_2"
       label: "Puppet master 2"
