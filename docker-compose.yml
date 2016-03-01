@@ -1,6 +1,6 @@
 viewer:
   image: camptocamp/puppet-catalog-diff-viewer:0.2.1
-  label:
+  labels:
     io.rancher.scheduler.affinity:container_label: io.rancher.stack_service.name=$${stack_name}/generator
   environment:
     S3_BUCKET: ${S3_BUCKET}
