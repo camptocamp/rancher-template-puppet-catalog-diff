@@ -7,7 +7,7 @@ viewer:
     S3_ACCESS_KEY: ${VIEWER_S3_ACCESS_KEY}
     S3_SECRET_KEY: ${VIEWER_S3_SECRET_KEY}
   volumes:
-  - puppetcatalogdiff:/usr/share/nginx/html/catalog_diff/data:ro
+  - puppetcatalogdiff:/data:ro
 
 generator:
   image: camptocamp/puppet-catalog-diff:1.6.0-6
