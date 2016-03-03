@@ -10,7 +10,7 @@ viewer:
   - puppetcatalogdiff:/data:ro
 
 generator:
-  image: camptocamp/puppet-catalog-diff:1.6.0-7
+  image: camptocamp/puppet-catalog-diff:1.6.0-8
   environment:
     S3_BUCKET: ${S3_BUCKET}
     S3_DIR: ${S3_DIR}
