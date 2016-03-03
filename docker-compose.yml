@@ -10,16 +10,16 @@ viewer:
   - puppetcatalogdiff:/data:ro
 
 generator:
-  image: camptocamp/puppet-catalog-diff:1.6.0-6
+  image: camptocamp/puppet-catalog-diff:1.6.0-7
   environment:
-    SITE: ${CATALOG_DIFF_SITE}
+    S3_BUCKET: ${S3_BUCKET}
+    S3_DIR: ${S3_DIR}
     MASTER1: ${CATALOG_DIFF_MASTER_1}
     MASTER2: ${CATALOG_DIFF_MASTER_2}
     THREADS: 3
     USE_PUPPETDB: 'yes'
-    S3_ACCESS_KEY: ${CATALOG_DIFF_S3_ACCESS_KEY}
-    S3_SECRET_KEY: ${CATALOG_DIFF_S3_SECRET_KEY}
-    CRON_SCRIPT: ${CRON_SCRIPT}
+    AWS_ACCESS_KEY_ID: ${CATALOG_DIFF_S3_ACCESS_KEY}
+    AWS_SECRET_ACCESS_KEY: ${CATALOG_DIFF_S3_SECRET_KEY}
   external_links:
   - ${PUPPETDB_SERVICE}:puppetdb
   - ${PUPPETSERVER_SERVICE}:puppet

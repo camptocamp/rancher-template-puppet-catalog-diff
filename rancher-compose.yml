@@ -1,13 +1,18 @@
 .catalog:
   name: "puppet-catalog-diff"
-  version: "v0.7.4"
+  version: "v1.0.0"
   description: "Puppet Catalog Diff Stack"
-  uuid: c2c-infra-dashboard-11
+  uuid: c2c-infra-dashboard-12
   minimum_rancher_version: v0.44.0
   questions:
     - variable: "S3_BUCKET"
       label: "S3 bucket"
       description: "S3 bucket"
+      type: "string"
+      required: false
+    - variable: "S3_DIR"
+      label: "S3 directory"
+      description: "Directory to store reports in the S3 bucket"
       type: "string"
       required: false
     - variable: "VIEWER_S3_ACCESS_KEY"
@@ -29,11 +34,6 @@
     - variable: "CATALOG_DIFF_MASTER_2"
       label: "Puppet master 2"
       description: "Puppet Master 2 for diffing"
-      type: "string"
-      required: false
-    - variable: "CATALOG_DIFF_SITE"
-      label: "Site"
-      description: "Catalog diff site"
       type: "string"
       required: false
     - variable: "PUPPETDB_SERVICE"
