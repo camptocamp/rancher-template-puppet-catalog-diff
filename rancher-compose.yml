@@ -76,3 +76,8 @@
       type: "string"
       default: "0 0 3"
       required: false
+    - variable: "SYNC"
+      label: "Sync reports on S3"
+      description: "Whether reports should be synced on S3"
+      type: "boolean"
+      default: false

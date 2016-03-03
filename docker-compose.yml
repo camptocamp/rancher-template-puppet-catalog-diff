@@ -23,6 +23,7 @@ generator:
     JOB_NAME1: 'catalog_diff_report'
     JOB_COMMAND1: ${JOB_COMMAND1}
     JOB_TIME1: ${JOB_TIME1}
+    SYNC: ${SYNC}
   external_links:
   - ${PUPPETDB_SERVICE}:puppetdb
   - ${PUPPETSERVER_SERVICE}:puppet
