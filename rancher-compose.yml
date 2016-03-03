@@ -54,11 +54,6 @@
       type: "service"
       default: "puppet/puppetca"
       required: true
-    - variable: "CRON_SCRIPT"
-      label: "Cron script"
-      description: "Content of cron script to launch daily"
-      type: "multiline"
-      required: false
     - variable: "CATALOG_DIFF_S3_ACCESS_KEY"
       label: "Catalog Diff S3 Access Key"
       description: "S3 Access Key for the Compiler"
@@ -68,4 +63,16 @@
       label: "Catalog Diff S3 Secret Key"
       description: "S3 Secret Key for the Compiler"
       type: "password"
+      required: false
+    - variable: "JOB_COMMAND1"
+      label: "Cron job command"
+      description: "Cron job to execute"
+      type: "string"
+      default: "catalog_diff"
+      required: false
+    - variable: "JOB_TIME1"
+      label: "Cron job time"
+      description: "Cron job time specification"
+      type: "string"
+      default: "0 0 3"
       required: false
