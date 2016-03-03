@@ -1,8 +1,8 @@
 .catalog:
   name: "puppet-catalog-diff"
-  version: "v0.7.3"
+  version: "v0.7.4"
   description: "Puppet Catalog Diff Stack"
-  uuid: c2c-infra-dashboard-10
+  uuid: c2c-infra-dashboard-11
   minimum_rancher_version: v0.44.0
   questions:
     - variable: "S3_BUCKET"
